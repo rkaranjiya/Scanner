@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="Your internet Should be On ! "
+        android:textSize="18dp">
+    </TextView>
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:layout_below="@+id/banner"
+            android:id="@+id/result"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="50dp">
+        </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+        <Button
+            android:id="@+id/ext"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/result"
+            android:background="@drawable/btn"
+            android:layout_centerInParent="true"
+            android:text="Exit"
+            android:textColor="#ffffff"
+            android:textSize="22dp"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:id="@+id/txt"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/ext">
+        </TextView>
+</RelativeLayout>
